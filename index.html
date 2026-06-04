@@ -1,86 +1,107 @@
 <html>
     <head>
-        <title>My Profolio</title>
+        <title>Home | My Profolio</title>
 
+        <meta name="description" content="A Profolio for Wong Wei Lun">
+        <meta name="author" content="Wong Wei Lun">
+
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/7c5a3a5715.js" crossorigin="anonymous"></script>
+
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="background-color-main">
         <!-- HEADER -->
-        <div class="container header">
-            <nav class="navbar navbar-expand-lg navbar-light py-3">
-                <div class="container-fluid">
-                    <a class="navbar-brand fw-bold" href="#">Wong Wei Lun</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Me</a>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+        <div id="navbar"></div>
 
         <!-- Content -->
-        <div class="container py-4">
-            <div class="d-flex mx-2 pb-4">
-                <div class="d-flex pe-4">
-                    <div>Image Here</div>
+        <div id="home" class="container py-5 mt-5">
+            <div class="row mx-2 pb-4">
+                <div class="col text-center pb-4">
+                    <img src="mypicture2.jpg" class="img-thumbnail" alt="Wong Wei Lun" style="max-width: 250px;">
                 </div>
-                <div>
-                    A guy who love to explore anything that he never seen before
+                <div class="col align-self-center text-center">
+                    <div class="text-start section-title">
+                        <h1>WONG WEI LUN (23)</h1>
+                        I am a curious and hands-on learner who enjoys exploring different areas of technology and ideas. 
+                        I often learn by building projects such as apps, games, and websites, which helps me understand concepts in a practical way. 
+                        I also love playing games and often find learning opportunities inside them, using gameplay experiences to understand mechanics and improve my thinking. 
+                        I like solving problems step by step, especially in programming and technical topics, and I am always willing to improve when something doesn't work. 
+                        Overall, I am someone who is creative, persistent, and motivated to keep learning and growing through real experience.
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-4">
+                <div class="h1 pb-4 section-title">Personal Qualities</div>
+
+                <div class="">
+                    <ul class="list-group">
+                        <li class="list-group-item">Curious and Exploratory</li>
+                        <li class="list-group-item">Self-Learner</li>
+                        <li class="list-group-item">Analytical Thinking</li>
+                        <li class="list-group-item">Growth-Oriented</li>
+                        <li class="list-group-item">Persistent Problem Solver</li>
+                        <li class="list-group-item">Practical Learner</li>
+                        <li class="list-group-item">Playful and Creative</li>
+                    </ul>
                 </div>
             </div>
             
             <div class="pb-4">
-                <div class="h1">Educations</div>
+                <div class="h1 pb-4 section-title">Academic History</div>
 
-                <div class="d-flex justify-content-between">
-                    <div class="col-12 col-md-5">
-                        <div class="card p-3">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card p-3 h-100">
                             <div class="text-uppercase fw-bold fs-4 card-header">Diploma in Technology Information</div>
-                            <div class="fs-5 card-body">Context here...</div>
+                            <div class="fs-5 card-body">Politeknik Balik Pulau</div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-5">
-                        <div class="card p-3">
-                            <div class="text-uppercase fw-bold fs-4 card-header">Diploma in Technology Information</div>
-                            <div class="fs-5 card-body">Context here...</div>
+                    <div class="col">
+                        <div class="card p-3 h-100">
+                            <div class="text-uppercase fw-bold fs-4 card-header">Bachelor of Information Technology (Game Technology) <i>(Currently)</i></div>
+                            <div class="fs-5 card-body">University Teknikal Melaka Malaysia</div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="pb-4">
-                <div class="h1">Work Experience</div>
+                <div class="h1 pb-4 section-title">Work Experience(s)</div>
 
-                <div class="d-flex justify-content-between">
-                    <div class="col-12 col-md-5">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
                         <div class="card p-3">
-                            <div class="text-uppercase fw-bold fs-4 card-header">Diploma in Technology Information</div>
-                            <div class="fs-5 card-body">Context here...</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-5">
-                        <div class="card p-3">
-                            <div class="text-uppercase fw-bold fs-4 card-header">Diploma in Technology Information</div>
-                            <div class="fs-5 card-body">Context here...</div>
+                            <div class="text-uppercase fw-bold fs-4 card-header">Digital Architecture Developer (11/2024 ~ 3/2026)</div>
+                            <div class="fs-5 card-body">Monster Interactive Sdn. Bhd.</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script>
+            var nav_home
+            var nav_project
+            var nav_contact
+
+            fetch("https://wongweilun9487.github.io/inc_nav.html")
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById("navbar").innerHTML = data;
+
+                    nav_home = document.getElementById("btn_home");
+                    nav_project = document.getElementById("btn_project");
+                    nav_contact = document.getElementById("btn_contact");
+
+                    nav_home.classList.add("active");
+                    nav_project.classList.remove("active");
+                    nav_contact.classList.remove("active");
+                });
+        </script>
     </body>
 </html>

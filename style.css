@@ -1,10 +1,15 @@
+:root {
+    --custom-main-background-color: #5DF8D8;
+    --custom-main-text-color: #000000;
+}
+
 body {
     background-color: #093C5D;
-    color: #ffffff;
+    color: var(--custom-main-text-color);
 }
 
 .container.header {
-    background-color: #5DF8D8;
+    background-color: var(--custom-main-background-color);
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -14,7 +19,7 @@ body {
 }
 
 .navbar {
-    background-color: #5DF8D8;
+    background-color: var(--custom-main-background-color);
 }
 
 .nav-link {
@@ -44,5 +49,19 @@ body {
 }
 
 .card {
-    color: #5DF8D8;
+    background-color: var(--custom-main-background-color);
+    color: var(--custom-main-text-color);
+}
+
+a {
+    cursor: pointer;
+}
+
+.list-group-item {
+    background-color: var(--custom-main-background-color);
+    color: var(--custom-main-text-color);
+}
+
+.section-title {
+    color:  #ffffff;
 }

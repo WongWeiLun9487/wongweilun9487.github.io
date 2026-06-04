@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Fiber Calculator | My Profolio</title>
+
+        <meta name="description" content="A Profolio for Wong Wei Lun">
+        <meta name="author" content="Wong Wei Lun">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/7c5a3a5715.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="background-color-main">
+        <!-- HEADER -->
+        <div id="navbar"></div>
+
+        <!-- Content -->
+        <div id="snake" class="container py-5 mt-5">
+            <div class="pb-4">
+                <a href="project.html" class="text-decoration-none" style="color: #ffffff;"><i class="fa-solid fa-arrow-left"></i> <span>Back to Project</span></a>
+            </div>
+
+            <div class="pb-4">
+                <div class="h1 pb-4 section-title">Fiber Calculator</div>
+
+                <div class="section-title">
+                    Type: Android Mobile Application <i class="fa-brands fa-android fa-lg"></i> <br>
+                    Programming Language: Java <i class="fa-brands fa-java fa-lg"></i> <br>
+                    Tools: Android Studio <br>
+                    <br>
+                    This android mobile application developed for polytechnic students to learn about fiber optic. <br>
+                    This application included:
+                    <ul>
+                        <li>Equation</li>
+                        <li>Calculation</li>
+                    </ul>
+
+                    <h3 class="text-decoration-underline">Equation</h3>
+                    This feature show the explanation about the power budget and the equaltion to calculater it.
+                    <br>
+                    <br>
+                    <h3 class="text-decoration-underline">Calculation</h3>
+                    This feature included 3 different calculation which included
+                    <ul>
+                        <li>Fiber Length</li>
+                        <li>Transmitter Power</li>
+                        <li>Total Link Loss</li>
+                    </ul>
+
+                    <br>
+                    Comment: A simple android mobile application and some functionality but this project let me to learn from beginning (Planning) until the end (Final Product)<br>
+                    <br>
+                    External Link: <a style="color: #ffffff" href="https://www.youtube.com/watch?v=f_mn0YUVlCY" target="_blank">Youtube</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var nav_home
+            var nav_project
+            var nav_contact
+
+            fetch("https://wongweilun9487.github.io/inc_nav.html")
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById("navbar").innerHTML = data;
+
+                    nav_home = document.getElementById("btn_home");
+                    nav_project = document.getElementById("btn_project");
+                    nav_contact = document.getElementById("btn_contact");
+
+                    nav_home.classList.remove("active");
+                    nav_project.classList.add("active");
+                    nav_contact.classList.remove("active");
+                });
+        </script>
+    </body>
+</html>

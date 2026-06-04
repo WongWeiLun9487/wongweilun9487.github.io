@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Discrod | My Profolio</title>
+
+        <meta name="description" content="A Profolio for Wong Wei Lun">
+        <meta name="author" content="Wong Wei Lun">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/7c5a3a5715.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="background-color-main">
+        <!-- HEADER -->
+        <div id="navbar"></div>
+
+        <!-- Content -->
+        <div id="snake" class="container py-5 mt-5">
+            <div class="pb-4">
+                <a href="project.html" class="text-decoration-none" style="color: #ffffff;"><i class="fa-solid fa-arrow-left"></i> <span>Back to Project</span></a>
+            </div>
+
+            <div class="pb-4">
+                <div class="h1 pb-4 section-title">Discord Bot</div>
+
+                <div class="section-title">
+                    Type: Bot <i class="fa-solid fa-robot fa-lg"></i> <br>
+                    Programming Language: Python <i class="fa-brands fa-python fa-lg"></i> <br>
+                    Tools: Visual Studio Code <br>
+                    <br>
+                    This bot worked on Discord. Currently this bot still in development. <br>
+                    <br>
+                    <span class="fw-bold text-decoration-underline">Currently feature:</span>
+                    <ul>
+                        <li>Detect keyword</li>
+                        <li>Run Command</li>
+                        <li>Play Music in Voice Channel</li>
+                        <li>Send Message</li>
+                    </ul>
+                    <br>
+                    <span class="fw-bold text-decoration-underline">The future feature:</span>
+                    <ul>
+                        <li>Birthday</li>
+                        <li>Assign Role</li>
+                        <li>Time Counter</li>
+                    </ul>
+                    <br>
+                    Comment: A cool project when I try to develop this bot. Need to learn important library when develop this.<br>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var nav_home
+            var nav_project
+            var nav_contact
+
+            fetch("https://wongweilun9487.github.io/inc_nav.html")
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById("navbar").innerHTML = data;
+
+                    nav_home = document.getElementById("btn_home");
+                    nav_project = document.getElementById("btn_project");
+                    nav_contact = document.getElementById("btn_contact");
+
+                    nav_home.classList.remove("active");
+                    nav_project.classList.add("active");
+                    nav_contact.classList.remove("active");
+                });
+        </script>
+    </body>
+</html>
