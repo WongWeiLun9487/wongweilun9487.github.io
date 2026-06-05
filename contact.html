@@ -12,6 +12,12 @@
         <script src="https://kit.fontawesome.com/7c5a3a5715.js" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="style.css">
+
+        <style>
+            .cs-hoverable:hover {
+                text-decoration: underline !important;
+            }
+        </style>
     </head>
     <body class="background-color-main">
         <!-- HEADER -->
@@ -22,11 +28,13 @@
                 <div class="h1 pb-4 section-title">Contact Me</div>
 
                 <div class="">
-                    <div class="pb-2"><a href="https://wa.me/60165692151" style="color: #ffffff" class="text-decoration-none" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"></i>+60165692151 (Click Here..)</a></div>
-                    <div><a href="mailto:weilunwong2@gmail.com" style="color: #ffffff" class="text-decoration-none" target="_blank"><i class="fa-regular fa-envelope fa-2xl"></i> weilunwong2@gmail.com (Click Here..)</a></div>
+                    <div class="pb-2"><a href="https://wa.me/60165692151" style="color: #ffffff" class="text-decoration-none cs-hoverable" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"></i><span class="ps-2">+60165692151 (Click Here..)</span></a></div>
+                    <div><a href="mailto:weilunwong2@gmail.com" style="color: #ffffff" class="text-decoration-none cs-hoverable" target="_blank"><i class="fa-regular fa-envelope fa-2xl"></i><span class="ps-2">weilunwong2@gmail.com (Click Here..)</span></a></div>
                 </div>
             </div>
         </div>
+
+        <div id="footer"></div>
 
         <script>
             var nav_home
@@ -45,6 +53,12 @@
                     nav_home.classList.remove("active");
                     nav_project.classList.remove("active");
                     nav_contact.classList.add("active");
+                });
+
+            fetch("https://wongweilun9487.github.io/inc_foot.html")
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
                 });
         </script>
     </body>

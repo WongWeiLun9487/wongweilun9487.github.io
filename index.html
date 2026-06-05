@@ -84,6 +84,8 @@
             </div>
         </div>
 
+        <div id="footer"></div>
+
         <script>
             var nav_home
             var nav_project
@@ -101,6 +103,12 @@
                     nav_home.classList.add("active");
                     nav_project.classList.remove("active");
                     nav_contact.classList.remove("active");
+                });
+
+            fetch("https://wongweilun9487.github.io/inc_foot.html")
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
                 });
         </script>
     </body>
