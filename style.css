@@ -68,5 +68,5 @@ a {
 
 .cs-main-theme {
     background-color: var(--custom-main-background-color);
-    color: #ffffff;
+    color: var(--custom-main-text-color);
 }
